@@ -21,11 +21,6 @@ const contaAsHoras = setInterval(function() { // Atualiza a contagem a cada segu
     const minutosAteOEvento = Math.floor(distanciaAteOEvento % horasEmMs / minutosEmMs); // Calcula os minutos restantes
     const segundosAteOEvento = Math.floor(distanciaAteOEvento % minutosEmMs / segEmMs); // Calcula os segundos restantes
 
-    console.log(diasAteOEvento);
-    console.log(horasAteOEvento);
-    console.log(minutosAteOEvento);
-    console.log(segundosAteOEvento);
-
     document.getElementById('contador').innerHTML = `${diasAteOEvento}d ${horasAteOEvento}h ${minutosAteOEvento}m ${segundosAteOEvento}s`; // Atualiza o contador no HTML
 
     if (distanciaAteOEvento < 0) { // Verifica se o evento já ocorreu
